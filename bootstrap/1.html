@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+     <!-- <script src="js/bootstrap.min.js"></script> -->
+    <!-- <script src="js/jquery-3.6.0.min.js"></script> -->
+    <!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap');
+
+        .container {
+            background-color: white;
+            max-width: 20rem;
+            border-radius: 0.5rem;
+            overflow: hidden;
+            box-shadow: 3px 3px 10px 0px rgba(50, 50, 50, 0.5);
+        }
+
+        body {
+            background-color: whitesmoke;
+            font-family: 'Roboto'
+        }
+
+        .info {
+            padding: 1rem;
+        }
+
+        .flag {
+            height: 10rem;
+            width: 100%;
+        }
+
+        .side-heading {
+            font-weight: bold;
+        }
+
+        .prof_pic {
+            border-radius: 50%;
+            height: 5rem;
+        }
+
+        .share_icon {
+            background-color: hsl(210, 46%, 95%);
+            border-radius: 50%;
+            height: 2rem;
+            width: 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+        }
+
+        .sub-heading {
+            color: hsl(217, 19%, 35%);
+            font-weight: bold;
+        }
+
+        .main_content {
+            color: hsl(214, 17%, 51%);
+        }
+
+        .post_details {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            position: relative;
+        }
+        .post_details:hover .share_container{
+            opacity: 1;
+            transform: translate(0);
+        }
+        .share_container{
+            display: flex;
+            align-items: center;
+            padding: 1rem;
+            background-color: hsl(214, 19%, 35%);
+            position: absolute;
+            top:0px;
+            left:0px;
+            right:0px;
+            opacity: 0;
+            transform: translateX(2rem);
+            transition:1s ease;
+            /* transition: 1s ease-in; */
+        }
+        .post_details:hover{
+          background-color: hsl(214, 17%, 51%);
+        }
+        .share_title{
+          color: hsl(214, 17%, 51%);
+          letter-spacing: 0.5rem;
+          font-weight: bold;
+        }
+        .share_pic{
+            height: 1.5rem;
+            margin-right: 1rem;
+        }
+        .notification_counter{
+            background-color: crimson;
+            color:white;
+            height: 0.3rem;
+            width: 0.3rem;
+            border-radius: 50%;
+            padding: 0.5rem;
+            align-items: center;
+            justify-content: center;
+            display: flex;
+            position: absolute;
+            top:0px;
+            left:55px;
+            font-weight: bold;
+        }
+        .notification_container{
+            position: relative;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container">
+        <img class="flag" height="100px" width="200px" src="img/flag.png">
+        <div class="info">
+            <h3>Germany</h3>
+            <p><span class="side-heading">Population:</span>14526355</p>
+            <p><span class="side-heading">Region:</span>Europe</p>
+            <p><span class="side-heading">Capital:</span>Berlin</p>
+        </div>
+    </div> -->
+    <div class="container">
+        <img class="flag" height="100px" width="200px" src="article-preview-component-master/images/drawers.jpg">
+        <div class="info">
+            <p class="sub-heading"> Shift the overall look and feel by adding these wonderful
+                touches to furniture in your home
+            </p>
+            <p class="main_content">Ever been in a room and felt like something was missing? Perhaps
+                it felt slightly bare and uninviting. I’ve got some simple tips
+                to help you make any room feel complete.
+            </p>
+            <div class="post_details">
+                <img class="prof_pic" src="article-preview-component-master/images/avatar-michelle.jpg">
+                <div>
+                    <p class="username">Michelle Appleton</p>
+                    <p class="post_date">28 Jun 2020</p>
+                </div>
+                <div class="share_container">
+                    <p class="share_title">SHARE</p>
+                    <div>
+                        <img class="share_pic" src="article-preview-component-master/images/icon-facebook.svg">
+                        <img class="share_pic" src="article-preview-component-master/images/icon-twitter.svg">
+                        <img class="share_pic" src="article-preview-component-master/images/icon-pinterest.svg">
+                    </div>
+                    <div class="share_icon">
+                        <img src="article-preview-component-master/images/icon-share.svg">
+                    </div>
+                </div>
+                <div class="share_icon">
+                    <img src="article-preview-component-master/images/icon-share.svg">
+                </div>
+               
+            </div>
+          
+           
+        </div>
+    </div>
+   
+</body>
+
+</html>
